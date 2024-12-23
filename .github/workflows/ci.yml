@@ -42,8 +42,3 @@ jobs:
       #   with:
       #     username: ${{ secrets.DOCKER_HUB_USERNAME }}
       #     password: ${{ secrets.DOCKER_HUB_TOKEN }}
-      
-      # - name: Push Docker image
-      #   run: |
-      #     docker tag chatapp ${{ secrets.DOCKER_HUB_USERNAME }}/chatapp:latest
-      #     docker push ${{ secrets.DOCKER_HUB_USERNAME }}/chatapp:latest
