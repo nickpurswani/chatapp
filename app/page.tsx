@@ -2,11 +2,18 @@
 
 import { useState } from 'react';
 
+// Define proper types for tool invocations
+interface ToolInvocation {
+  name: string;
+  // Add other properties that might be in toolInvocations
+  [key: string]: unknown;
+}
+
 interface Message {
   id: string;
-  role: string;
+  role: 'user' | 'assistant';  // Make role more specific
   content: string;
-  toolInvocations?: any;
+  toolInvocations?: ToolInvocation;  // Replace any with proper type
 }
 
 export default function Chat() {
@@ -97,7 +104,7 @@ export default function Chat() {
               </div>
             )}
             
-            {messages.map((m: { role: string; toolInvocations?: any; content: string }, index) => (
+            {messages.map((m: Message, index) => (
               <div 
                 key={index} 
                 className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}
