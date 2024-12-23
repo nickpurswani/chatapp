@@ -1,3 +1,20 @@
+## AI-Assisted Development
+
+This project utilized AI assistance tools to enhance the development process. Here are some key examples:
+
+### TypeScript Type Definitions
+
+AI assistance helped refactor the chat application's type definitions, particularly in resolving ESLint errors and improving type safety. For example:
+
+### Development Benefits
+- Improved code quality through better type safety
+- Faster debugging and error resolution
+- More maintainable codebase through proper TypeScript interfaces
+- Quick resolution of ESLint warnings and errors
+
+### Tools Used
+- GitHub Copilot for code suggestions
+- Claude AI for code review and refactoring suggestions
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
