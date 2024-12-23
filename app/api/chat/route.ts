@@ -1,4 +1,4 @@
-export async function POST(req: Request) {
+export async function POST() {
     const hardcodedMessages = [
       { id: "1", role: "assistant", content: "Hello! How can I assist you today?" },
       { id: "2", role: "assistant", content: "Here's more information in a follow-up message." },
